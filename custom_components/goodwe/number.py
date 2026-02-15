@@ -191,6 +191,7 @@ NUMBERS = (
         native_unit_of_measurement=UnitOfPower.WATT,
         native_step=100,
         native_min_value=0,
+        native_max_value=8000,
         getter=lambda inv: inv.read_setting("ems_power_limit"),
         mapper=lambda v: v,
         setter=lambda inv, val: inv.write_setting("ems_power_limit", val),
